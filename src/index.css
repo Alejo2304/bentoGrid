@@ -2,6 +2,18 @@
 @import "tailwindcss";
 
 @theme {
+  /* Color theme config */
+  --color-purple-100: hsl(254, 88%, 90%);
+  --color-purple-500: hsl(256, 67%, 59%);
+
+  --color-yellow-100: hsl(31, 66%, 93%);
+  --color-yellow-500: hsl(39, 100%, 71%);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 7%);
+
+
   --font-dmsans: "DM Sans", sans-serif;
+  --font-size-dmsans: 18px;
 }
 

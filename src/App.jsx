@@ -1,12 +1,11 @@
-import BentoGrid from "./assets/components/BentoGrid"
+import BentoGrid from "./components/BentoGrid.jsx"
 
 function App() {
-
   return (
     <main>
-        <BentoGrid />
+        <BentoGrid/>
     </main>
-  )
+  );
 }
 
 export default App

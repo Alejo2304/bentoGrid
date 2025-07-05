@@ -62,9 +62,9 @@ export function PurpleContainerDescriptive({ startTitle, emTitle, italicTitle, e
 
 export function PurpleContainer({ text, imgPath, imgAlt }) {
     return (
-        <div className="bg-purple-500">
-            <img src={imgPath} alt={imgAlt} />
-            <h1 className="font-dmsans font-medium text-white">{text}</h1>
+        <div className="flex flex-col items-center justify-center bg-purple-500 rounded-lg shadow-lg p-5 space-y-8">
+            <img className="w-2/3 "src={imgPath} alt={imgAlt} />
+            <h1 className="w-2/3 font-dmsans font-medium text-3xl text-white text-center">{text}</h1>
         </div>
     );
 }

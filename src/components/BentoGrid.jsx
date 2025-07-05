@@ -39,16 +39,15 @@ export default function BentoGrid(){
                 imgPath={SchedulePostImg}
                 imgAlt="Schedule of best time to post"
             />
-
-            {/* 
-            
-            
             
             <PurpleContainer
-                text="Grow Followers with non-stop content" 
+                text="Grow Followers with non-stop content." 
                 imgPath={GrowFollowersImg}
                 imgAlt="Grow Followers"
             />
+
+            {/* 
+            
             <WhiteContainerDescriptive />
             <Yellow100Container />
             <Yellow500Container />

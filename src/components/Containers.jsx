@@ -1,7 +1,18 @@
-export function Yellow500Container({ text, imgPath, imgAlt }) {
+export function Yellow500Container1({ text, imgPath, imgAlt }) {
     return (
-        <div className="bg-yellow-500 px-4 pt-4 rounded-lg h-62 overflow-hidden shadow-lg">
+        <div className="bg-yellow-500 px-4 pt-4 rounded-lg h-65 overflow-hidden shadow-lg space-y-5">
             <h1 className="font-dmsans font-medium text-3xl">
+                {text}
+            </h1>
+            <img src={imgPath} alt={imgAlt} className="w-2/3" />
+        </div>
+    );
+}
+
+export function Yellow500Container2({ text, imgPath, imgAlt }) {
+    return (
+        <div className="bg-yellow-500 p-5 rounded-lg shadow-lg space-y-5">
+            <h1 className="font-dmsans font-medium text-4xl">
                 {text}
             </h1>
             <img src={imgPath} alt={imgAlt} className="w-2/3" />

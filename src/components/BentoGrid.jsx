@@ -1,4 +1,4 @@
-import {Yellow100Container, Yellow500Container} from './Containers.jsx'
+import {Yellow100Container, Yellow500Container1, Yellow500Container2} from './Containers.jsx'
 import {Purple100Container, PurpleContainer, PurpleContainerDescriptive} from './Containers.jsx'
 import {WhiteContainerDescriptive, WhiteContainer} from './Containers.jsx'
 
@@ -9,6 +9,7 @@ import CalendarImg from '../assets/images/illustration-consistent-schedule.webp'
 import SchedulePostImg from '../assets/images/illustration-schedule-posts.webp'
 import AudienceGrowthImg from '../assets/images/illustration-audience-growth.webp'
 import CreatePostImg from '../assets/images/illustration-create-post.webp'
+import AiContentImg from '../assets/images/illustration-ai-content.webp'
 
 export default function BentoGrid(){
     return(
@@ -29,7 +30,7 @@ export default function BentoGrid(){
                 imgAlt="Social media accounts image."
             />
 
-            <Yellow500Container 
+            <Yellow500Container1 
                 text="Maintain a consistent posting schedule."
                 imgPath={CalendarImg}
                 img alt="Calendar with schedule."
@@ -62,13 +63,11 @@ export default function BentoGrid(){
             imgAlt="Create post button image"
             />
 
-            {/* 
-            
-            
-            
-            <Yellow500Container />
-            */}
+            <Yellow500Container2
+            text="Write your content using AI."
+            imgPath={AiContentImg}
+            imgAlt="AI interaction chat."
+            />
         </div>
-
     );
 }

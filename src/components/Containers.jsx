@@ -33,7 +33,7 @@ export function Yellow100Container({ text, emText, imgPath, imgAlt }) {
 
 export function WhiteContainer({ text, imgPath, imgAlt }) {
     return (
-        <div className="bg-white rounded-lg shadow-lg px-5 py-2">
+        <div className="bg-white rounded-lg shadow-lg p-5">
             <img className="drop-shadow-md rounded-[1lh]" src={imgPath} alt={imgAlt} />
             <h1 className="font-dmsans font-medium text-2xl pr-4">{text}</h1>
         </div>
@@ -82,7 +82,7 @@ export function PurpleContainer({ text, imgPath, imgAlt }) {
 
 export function Purple100Container({ textTitle, textDescription, imgPath, imgAlt }) {
     return (
-        <div className="flex flex-col items-center justify-center bg-purple-100 rounded-lg shadow-lg space-y-3 p-5">
+        <div className="flex flex-col items-center justify-center bg-purple-100 rounded-lg shadow-lg space-y-5 px-5 py-6">
             <h1 className="font-dmsans font-medium text-center text-3xl">{textTitle}</h1>
             <img src={imgPath} alt={imgAlt} />
             <p className="font-dmsans font-normal text-xl text-center px-5 ">{textDescription}</p>

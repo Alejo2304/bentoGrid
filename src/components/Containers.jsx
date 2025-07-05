@@ -1,10 +1,10 @@
 export function Yellow500Container({ text, imgPath, imgAlt }) {
     return (
-        <div>
-            <h1>
+        <div className="bg-yellow-500 px-4 pt-4 rounded-lg h-62 overflow-hidden shadow-lg">
+            <h1 className="font-dmsans font-medium text-3xl">
                 {text}
             </h1>
-            <img src={imgPath} alt={imgAlt} />
+            <img src={imgPath} alt={imgAlt} className="w-2/3" />
         </div>
     );
 }
@@ -22,9 +22,9 @@ export function Yellow100Container({ text, emText, imgPath, imgAlt }) {
 
 export function WhiteContainer({ text, imgPath, imgAlt }) {
     return (
-        <div className="bg-white rounded-md shadow-lg px-5 py-2">
-            <img className="drop-shadow-md rounded-[10lh]" src={imgPath} alt={imgAlt} />
-            <h1 className="font-dmsans font-medium text-2xl">{text}</h1>
+        <div className="bg-white rounded-lg shadow-lg px-5 py-2">
+            <img className="drop-shadow-md rounded-[1lh]" src={imgPath} alt={imgAlt} />
+            <h1 className="font-dmsans font-medium text-2xl pr-4">{text}</h1>
         </div>
     );
 }
@@ -41,7 +41,7 @@ export function WhiteContainerDescriptive({ textTitle, textDescription, imgPath,
 
 export function PurpleContainerDescriptive({ startTitle, emTitle, italicTitle, endTitle, imgPath, imgAlt, imgText }) {
     return (
-        <div className="flex flex-col items-center bg-purple-500 p-4 rounded-md shadow-lg">
+        <div className="flex flex-col items-center bg-purple-500 p-4 rounded-lg shadow-lg">
             <div className="flex text-center">
                 <h1 className="font-dmsans font-medium text-white text-5xl">
                     <span className="block">{startTitle} </span>

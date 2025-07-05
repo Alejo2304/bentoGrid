@@ -71,10 +71,10 @@ export function PurpleContainer({ text, imgPath, imgAlt }) {
 
 export function Purple100Container({ textTitle, textDescription, imgPath, imgAlt }) {
     return (
-        <div>
-            <h1>{textTitle}</h1>
+        <div className="flex flex-col items-center justify-center bg-purple-100 rounded-lg shadow-lg space-y-3 p-5">
+            <h1 className="font-dmsans font-medium text-center text-3xl">{textTitle}</h1>
             <img src={imgPath} alt={imgAlt} />
-            <p>{textDescription}</p>
+            <p className="font-dmsans font-normal text-xl text-center px-5 ">{textDescription}</p>
         </div>
     );
 }

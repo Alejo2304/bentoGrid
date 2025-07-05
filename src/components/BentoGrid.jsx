@@ -5,7 +5,8 @@ import {WhiteContainerDescriptive, WhiteContainer} from './Containers.jsx'
 import GrowFollowersImg from '../assets/images/illustration-grow-followers.webp'
 import FiveStarsImg from '../assets/images/illustration-five-stars.webp'
 import SocialMediaImg from '../assets/images/illustration-multiple-platforms.webp'
-import ScheduleImg from '../assets/images/illustration-consistent-schedule.webp'
+import CalendarImg from '../assets/images/illustration-consistent-schedule.webp'
+import SchedulePostImg from '../assets/images/illustration-schedule-posts.webp'
 
 export default function BentoGrid(){
     return(
@@ -28,14 +29,21 @@ export default function BentoGrid(){
 
             <Yellow500Container 
                 text="Maintain a consistent posting schedule."
-                imgPath={ScheduleImg}
+                imgPath={CalendarImg}
                 img alt="Calendar with schedule."
+            />
+
+            <Purple100Container 
+                textTitle="Schedule to social media."
+                textDescription="Optimize post timings to publish content at the pefect time for your audience."
+                imgPath={SchedulePostImg}
+                imgAlt="Schedule of best time to post"
             />
 
             {/* 
             
             
-            <Purple100Container />
+            
             <PurpleContainer
                 text="Grow Followers with non-stop content" 
                 imgPath={GrowFollowersImg}

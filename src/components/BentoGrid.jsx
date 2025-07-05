@@ -8,7 +8,7 @@ import SocialMediaImg from '../assets/images/illustration-multiple-platforms.web
 import CalendarImg from '../assets/images/illustration-consistent-schedule.webp'
 import SchedulePostImg from '../assets/images/illustration-schedule-posts.webp'
 import AudienceGrowthImg from '../assets/images/illustration-audience-growth.webp'
-
+import CreatePostImg from '../assets/images/illustration-create-post.webp'
 
 export default function BentoGrid(){
     return(
@@ -55,20 +55,20 @@ export default function BentoGrid(){
                 imgAlt="Audience icons"
             />
 
+            <Yellow100Container 
+            text="Create and schedule content"
+            emText="quicker."
+            imgPath={CreatePostImg}
+            imgAlt="Create post button image"
+            />
+
             {/* 
             
             
-            <Yellow100Container />
+            
             <Yellow500Container />
             */}
         </div>
 
     );
 }
-/*
-
-
-<WhiteContainerDescriptive />
-<Yellow100Container />
-<Yellow500Container />
-*/

@@ -11,11 +11,11 @@ export function Yellow500Container({ text, imgPath, imgAlt }) {
 
 export function Yellow100Container({ text, emText, imgPath, imgAlt }) {
     return (
-        <div>
-            <h1>
-                {text} <em>{emText}</em>
+        <div className="bg-yellow-100 rounded-lg shadow-lg p-5 space-y-5">
+            <h1 className="font-dmsans font-medium text-4xl">
+                {text} <em className="italic text-purple-500">{emText}</em>
             </h1>
-            <img src={imgPath} alt={imgAlt} />
+            <img className="w-2/3" src={imgPath} alt={imgAlt} />
         </div>
     );
 }

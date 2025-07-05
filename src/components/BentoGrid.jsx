@@ -7,6 +7,8 @@ import FiveStarsImg from '../assets/images/illustration-five-stars.webp'
 import SocialMediaImg from '../assets/images/illustration-multiple-platforms.webp'
 import CalendarImg from '../assets/images/illustration-consistent-schedule.webp'
 import SchedulePostImg from '../assets/images/illustration-schedule-posts.webp'
+import AudienceGrowthImg from '../assets/images/illustration-audience-growth.webp'
+
 
 export default function BentoGrid(){
     return(
@@ -45,10 +47,17 @@ export default function BentoGrid(){
                 imgPath={GrowFollowersImg}
                 imgAlt="Grow Followers"
             />
+            
+            <WhiteContainerDescriptive
+                textTitle=">56%"
+                textDescription="faster audience growth"
+                imgPath={AudienceGrowthImg}
+                imgAlt="Audience icons"
+            />
 
             {/* 
             
-            <WhiteContainerDescriptive />
+            
             <Yellow100Container />
             <Yellow500Container />
             */}

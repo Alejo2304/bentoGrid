@@ -31,10 +31,10 @@ export function WhiteContainer({ text, imgPath, imgAlt }) {
 
 export function WhiteContainerDescriptive({ textTitle, textDescription, imgPath, imgAlt }) {
     return (
-        <div>
-            <h1>{textTitle}</h1>
-            <p>{textDescription}</p>
-            <img src={imgPath} alt={imgAlt} />
+        <div className="bg-white p-6 space-y-3 rounded-lg shadow-lg">
+            <h1 className="font-dmsans font-medium text-6xl">{textTitle}</h1>
+            <p className="font-dmsans font-medium text-xl">{textDescription}</p>
+            <img className="w-1/2"src={imgPath} alt={imgAlt} />
         </div>
     );
 }

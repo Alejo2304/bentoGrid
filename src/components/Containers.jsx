@@ -45,7 +45,7 @@ export function WhiteContainerDescriptive({ textTitle, textDescription, imgPath,
         <div className="bg-white p-6 space-y-3 rounded-lg shadow-lg">
             <h1 className="font-dmsans font-medium text-6xl">{textTitle}</h1>
             <p className="font-dmsans font-medium text-xl">{textDescription}</p>
-            <img className="w-1/2"src={imgPath} alt={imgAlt} />
+            <img className="w-1/2 md:w-auto md:h-[3lh]"src={imgPath} alt={imgAlt} />
         </div>
     );
 }

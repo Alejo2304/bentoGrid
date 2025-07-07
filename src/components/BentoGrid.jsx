@@ -13,7 +13,7 @@ import AiContentImg from '../assets/images/illustration-ai-content.webp'
 
 export default function BentoGrid(){
     return(
-        <div className='px-4 py-6 space-y-6 md:grid md:grid-cols-4 md:grid-rows-6 md:gap-5 md:space-y-0 md:w-[80rem] md:h-screen lg:h-[80vh]'>
+        <div className='px-4 py-6 space-y-6 md:grid md:grid-cols-4 md:grid-rows-6 md:gap-5 md:space-y-0 md:w-[60rem] md:h-screen lg:h-[95vh] xl:h-[85vh] 2xl:h-[80vh]'>
             <div className='md:col-start-2 md:row-start-1 md:row-span-2 md:col-span-2'>
                 <PurpleContainerDescriptive 
                     startTitle="Social Media"

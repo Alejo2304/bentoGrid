@@ -13,61 +13,70 @@ import AiContentImg from '../assets/images/illustration-ai-content.webp'
 
 export default function BentoGrid(){
     return(
-        <div className='bg-whitebg px-4 py-6 space-y-6'>
-            <PurpleContainerDescriptive 
-                startTitle="Social Media"
-                emTitle="10x"
-                italicTitle="Faster"
-                endTitle="with AI"
-                imgPath={FiveStarsImg}
-                imgAlt="5 stars review"
-                imgText="Over 4,000 5-stars reviews"
-            />
-
-            <WhiteContainer 
-                text="Manage multiple accounts and platforms."
-                imgPath={SocialMediaImg}
-                imgAlt="Social media accounts image."
-            />
-
-            <Yellow500Container1 
-                text="Maintain a consistent posting schedule."
-                imgPath={CalendarImg}
-                img alt="Calendar with schedule."
-            />
-
-            <Purple100Container 
-                textTitle="Schedule to social media."
-                textDescription="Optimize post timings to publish content at the pefect time for your audience."
-                imgPath={SchedulePostImg}
-                imgAlt="Schedule of best time to post"
-            />
-            
-            <PurpleContainer
-                text="Grow Followers with non-stop content." 
-                imgPath={GrowFollowersImg}
-                imgAlt="Grow Followers"
-            />
-            
-            <WhiteContainerDescriptive
-                textTitle=">56%"
-                textDescription="faster audience growth"
-                imgPath={AudienceGrowthImg}
-                imgAlt="Audience icons"
-            />
-
-            <Yellow100Container 
-            text="Create and schedule content"
-            emText="quicker."
-            imgPath={CreatePostImg}
-            imgAlt="Create post button image"
-            />
-
-            <Yellow500Container2
-            text="Write your content using AI."
-            imgPath={AiContentImg}
-            imgAlt="AI interaction chat."
-            />
+        <div className='px-4 py-6 space-y-6 md:grid md:grid-cols-4 md:grid-rows-6 md:gap-5 md:space-y-0 md:w-[80rem] md:h-screen'>
+            <div className='md:col-start-2 md:row-start-1 md:row-span-2 md:col-span-2'>
+                <PurpleContainerDescriptive 
+                    startTitle="Social Media"
+                    emTitle="10x"
+                    italicTitle="Faster"
+                    endTitle="with AI"
+                    imgPath={FiveStarsImg}
+                    imgAlt="5 stars review"
+                    imgText="Over 4,000 5-stars reviews"
+                />
+            </div>
+            <div className='md:col-start-2 md:row-start-3 md:row-span-2 md:col-span-1'>
+                <WhiteContainer 
+                    text="Manage multiple accounts and platforms."
+                    imgPath={SocialMediaImg}
+                    imgAlt="Social media accounts image."
+                />
+            </div>
+            <div className='md:col-start-3 md:row-start-3 md:row-span-2 md:col-span-1'>
+                <Yellow500Container1 
+                    text="Maintain a consistent posting schedule."
+                    imgPath={CalendarImg}
+                    imgAlt="Calendar with schedule."
+                />
+            </div>
+            <div className='md:col-start-4 md:row-start-1 md:row-span-4 md:col-span-1'>
+                <Purple100Container 
+                    textTitle="Schedule to social media."
+                    textDescription="Optimize post timings to publish content at the pefect time for your audience."
+                    imgPath={SchedulePostImg}
+                    imgAlt="Schedule of best time to post"
+                />
+            </div>
+            <div className='md:col-start-3 md:row-start-5 md:row-span-2 md:col-span-2'>
+                <PurpleContainer
+                    text="Grow Followers with non-stop content." 
+                    imgPath={GrowFollowersImg}
+                    imgAlt="Grow Followers"
+                />
+            </div>
+            <div className='md:col-start-2 md:row-start-5 md:row-span-2 md:col-span-1'>
+                <WhiteContainerDescriptive
+                    textTitle=">56%"
+                    textDescription="faster audience growth"
+                    imgPath={AudienceGrowthImg}
+                    imgAlt="Audience icons"
+                />
+            </div>
+            <div className='md:col-start-1 md:row-start-1 md:row-span-3 md:col-span-1'>
+                <Yellow100Container 
+                    text="Create and schedule content"
+                    emText="quicker."
+                    imgPath={CreatePostImg}
+                    imgAlt="Create post button image"
+                />
+            </div>
+            <div className='md:col-start-1 md:row-start-4 md:row-span-3 md:col-span-1'>
+                <Yellow500Container2
+                    text="Write your content using AI."
+                    imgPath={AiContentImg}
+                    imgAlt="AI interaction chat."
+                />
+            </div>
         </div>
     );
 }

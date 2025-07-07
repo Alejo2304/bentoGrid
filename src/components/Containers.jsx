@@ -74,8 +74,8 @@ export function PurpleContainerDescriptive({ startTitle, emTitle, italicTitle, e
 export function PurpleContainer({ text, imgPath, imgAlt }) {
     return (
         <div className="flex flex-col md:flex-row md:h-auto items-center justify-center bg-purple-500 rounded-lg shadow-lg p-5 space-y-8">
-            <img className="flex-1/2 "src={imgPath} alt={imgAlt} />
-            <h1 className="flex-1/2 font-dmsans font-medium text-3xl text-white text-center">{text}</h1>
+            <img className="flex-1/2 md:flex-1/3 md:h-auto"src={imgPath} alt={imgAlt} />
+            <h1 className="flex-1/2 md:flex-2/3 font-dmsans font-medium text-3xl text-white text-center">{text}</h1>
         </div>
     );
 }

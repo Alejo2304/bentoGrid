@@ -55,17 +55,17 @@ export function PurpleContainerDescriptive({ startTitle, emTitle, italicTitle, e
         <div className="flex flex-col items-center bg-purple-500 p-4 rounded-lg shadow-lg">
             <div className="flex text-center">
                 <h1 className="font-dmsans font-medium text-white text-5xl">
-                    <span className="block">{startTitle} </span>
-                    <span className="block">
+                    <span className="block md:inline">{startTitle} </span>
+                    <span className="block md:inline">
                         <em className="text-yellow-500 not-italic"> {emTitle}</em>
                         <em className="italic"> {italicTitle} </em>
                     </span>
-                    <span className="block">{endTitle}</span>
+                    <span className="block md:inline">{endTitle}</span>
                 </h1>
             </div>
             <div className="px-8 py-4">
-                <img className="px-8" src={imgPath} alt={imgAlt} />
-                <p className="font-dmsans font-normal text-white text-center">{imgText}</p>
+                <img className="px-8 md:h-[1.5lh]" src={imgPath} alt={imgAlt} />
+                <p className="font-dmsans font-normal text-white text-center text-xl">{imgText}</p>
             </div>
         </div>
     );
@@ -73,9 +73,9 @@ export function PurpleContainerDescriptive({ startTitle, emTitle, italicTitle, e
 
 export function PurpleContainer({ text, imgPath, imgAlt }) {
     return (
-        <div className="flex flex-col items-center justify-center bg-purple-500 rounded-lg shadow-lg p-5 space-y-8">
-            <img className="w-2/3 "src={imgPath} alt={imgAlt} />
-            <h1 className="w-2/3 font-dmsans font-medium text-3xl text-white text-center">{text}</h1>
+        <div className="flex flex-col md:flex-row md:h-auto items-center justify-center bg-purple-500 rounded-lg shadow-lg p-5 space-y-8">
+            <img className="flex-1/2 "src={imgPath} alt={imgAlt} />
+            <h1 className="flex-1/2 font-dmsans font-medium text-3xl text-white text-center">{text}</h1>
         </div>
     );
 }
